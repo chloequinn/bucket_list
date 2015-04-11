@@ -1,0 +1,10 @@
+<h2><%= @list.name %></h2>
+<p><%= @list.reason %></p>
+
+<ul>
+<% @list.steps.each do |single_step| %>
+	<li>
+		<%= single_step.description %> | <%= single_step.complete %>
+	</li>
+<% end %>
+</ul>
